@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    flex-wrap: wrap;
+    min-width: 1200px;
+    min-height: 1200px;
+    max-width: 1200px;
+    max-height: 1200px;
+    justify-content:center;
+    align-items:center;
+}
+*{
+    outline: auto;
+}
+div{
+    flex: 1 1 auto;
+}
+.permaHover{
+    background-color: cyan;
+}
+.ni{
+    background-color: #ff5c00;
+}
+.san{
+    background-color: lime;
+}
+.goo{
+    background-color: blue;
+}
+.nana{
+    background-color: orangered;
+}
