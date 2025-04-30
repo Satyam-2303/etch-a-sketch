@@ -1,6 +1,6 @@
 const container=document.querySelector('.container');
 const grid =document.querySelector('.grid');
-let gridSize=prompt('Enter your GridSize: ')
+let gridSize=prompt('Enter your GridSize:   ')
 
 grid.addEventListener('click',function refresh(){
     window.location.reload("Refresh")
@@ -8,7 +8,7 @@ grid.addEventListener('click',function refresh(){
 
 for(i=1;i<=(gridSize*gridSize);i++){
     const div=document.createElement('div');
-    let length=1200/gridSize;
+    let length=960/gridSize;
     let a=i+1;
     div.style.cssText=`width:${length}px; height:${length}px`;
         if(a%11===0){
