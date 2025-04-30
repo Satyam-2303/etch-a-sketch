@@ -1,11 +1,15 @@
 const container=document.querySelector('.container');
-let gridSize=prompt('Enter the number of squares: ')
+const grid =document.querySelector('.grid');
+let gridSize=prompt('Enter your GridSize: ')
+
+grid.addEventListener('click',function refresh(){
+    window.location.reload("Refresh")
+  })
 
 for(i=1;i<=(gridSize*gridSize);i++){
     const div=document.createElement('div');
     let length=1200/gridSize;
     let a=i+1;
-    console.log(a);
     div.style.cssText=`width:${length}px; height:${length}px`;
         if(a%11===0){
             div.classList.add('class-two');
@@ -20,7 +24,6 @@ for(i=1;i<=(gridSize*gridSize);i++){
         }
         container.appendChild(div);
 }
-
 
 const smallBoxes = document.querySelectorAll('.smallBox');
 const twos =document.querySelectorAll('.class-two');
